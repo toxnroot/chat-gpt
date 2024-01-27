@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image generation</title>
+    <link rel="stylesheet" href="/css/style_gen.css" />
+    <link rel="stylesheet" href="/font-awsome/css/all.css" />
+    <link rel="stylesheet" href="/css/prism.css">
+  </head>
+  <body class="center">
+    <h1>Ai Image generation</h1>
+    <dev class="images" id="images">
+      <i class="fa-regular fa-image photo sc"></i>
+      <i class="fa-regular fa-image photo sc"></i>
+      <i class="fa-regular fa-image photo sc"></i>
+    </dev>
+    <select  id="sel">
+      
+    </select>
+    <dev class="box">
+      <textarea  id="inp" placeholder="Write prompt" rows="1" oninput="this.style.height = ''; this.style.height = (this.scrollHeight) + 'px'"></textarea>
+        <button id="send"><i class="fa-regular fa-paper-plane"></i></button>
+    </dev>
+
+    
+
+    <p class="msg" id="msg">Too Many Requests</p>
+
+    <!-- Axios Lib -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+    integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- My code -->
+    <script src="/js/gen_img.js"></script>
+    <script src="/js/prism.js"></script>
+  </body>
+</html>
+      
