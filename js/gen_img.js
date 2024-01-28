@@ -1,4 +1,4 @@
-const api = "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";
+const api = "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";
 // const api = "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";
 
 /* 
